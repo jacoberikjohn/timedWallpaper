@@ -1,4 +1,5 @@
 timedWallpaper is a simple script that automatically changes your wallpaper depending on the time of day.  The idea is that the wallpaper sets the mood of the user and subconsciously aligns your body clock even inside a building.
+
 Author: Erik John Jacob.
 Copyright (C) 2016  Erik John Jacob
 
@@ -21,13 +22,17 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Step 1. Place my directory(timedWallpaper) anywhere in your PC and make sure timedWallpaper.sh is executable.
 
-Step 2. Edit crontab to add our script
+Step 2. Create the directory structure for the wallpapers by executing makeWallpaperDirectory.sh
+
+Step 3. The tedious part, place your wallpapers into the directory according to the desired time.
+
+Step 4. Edit crontab to add our script
 $ crontab -e
 
-Step 3. Insert this line.  This will change the wallpapers every 1 minute, change as necessary.
+Step 5. Insert this line.  This will change the wallpapers every 1 minute, change as necessary.
 */1 * * * * DISPLAY=:0 /path/to/the/script/timedWallpaper/timedWallpaper.sh
 
-Step 4. Reboot
+Step 6. Reboot
 
 
 
